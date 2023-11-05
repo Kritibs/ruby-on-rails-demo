@@ -1,24 +1,12 @@
-# README
+# Requirements:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version: 3.2.2
 
-Things you may want to cover:
+- Bootstap is already copy-pasted in the main html file
 
-* Ruby version
+- Devise version: 4.9.3
 
-* System dependencies
+# Run:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- rails db:migrate to add migration to the database
+- rails s to start the server
