@@ -1,0 +1,50 @@
+
+<div id="friends" class="mt-4">
+  <table class="table table-bordered table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone no.</th>
+      <th scope="col">Twitter</th>
+      <th scope="col">User Id</th>
+      <th scope="col">Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @friends.each do |friend| %>
+    <tr>
+
+    <td>
+    <%= friend.first_name %>
+    </td>
+
+    <td>
+    <%= friend.last_name %>
+    </td>
+    <td>
+    <%= friend.email %>
+    </td>
+
+    <td>
+    <%= friend.phone%>
+    </td>
+
+    <td>
+    <%= friend.twitter %>
+    </td>
+    <td>
+    <%= friend.user_id %>
+    </td>
+    <td>
+      <%= link_to "Show this friend", friend %>
+    </td>
+
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+</div>
+
+<%= link_to "New friend", new_friend_path, class:"btn btn-secondary"%>
